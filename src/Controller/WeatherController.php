@@ -19,6 +19,8 @@ class WeatherController extends AbstractController
     /**
      * @Route("/{city}", name="index");
      * 
+     * Param string
+     * 
      * Method return json with all city info
      * 
      */
@@ -31,6 +33,8 @@ class WeatherController extends AbstractController
 
     /**
      * @Route("/{city}/temperature", name="temperature");
+     * 
+     * Param string
      * 
      * Method return string of current temperature with unit
      * 
@@ -48,6 +52,8 @@ class WeatherController extends AbstractController
     /**
      * @Route("/{city}/temperature_max", name="temperature_max");
      * 
+     * Param string
+     * 
      * Method return string of max temperature with unit
      * 
      * Example: "18 °C"
@@ -62,6 +68,8 @@ class WeatherController extends AbstractController
 
     /**
      * @Route("/{city}/temperature_min", name="temperature_min");
+     * 
+     * Param string
      * 
      * Method return string of min temperature with unit
      * 
@@ -79,6 +87,8 @@ class WeatherController extends AbstractController
     /**
      * @Route("/{city}/weather", name="weather");
      * 
+     * Param string
+     * 
      * Method return string of current weather in French
      * 
      * Example: "ciel dégagé"
@@ -93,6 +103,8 @@ class WeatherController extends AbstractController
 
     /**
      * @Route("/{city}/windspeed", name="windspeed");
+     * 
+     * Param string
      * 
      * Method return string wind speed with unit
      * 
@@ -109,6 +121,8 @@ class WeatherController extends AbstractController
     /**
      * @Route("/{city}/winddirection", name="winddirection");
      * 
+     * Param string
+     * 
      * Method return a string wind direction
      * 
      * Example: "20 NNE"
@@ -124,7 +138,10 @@ class WeatherController extends AbstractController
     /**
      * @Route("/{city}/precipitation", name="precipitation");
      * 
+     * Param string
+     * 
      * Method return a string "rain" or "no"
+     * 
      */
 
     public function precipitation($city)
@@ -135,6 +152,8 @@ class WeatherController extends AbstractController
 
     /**
      * @Route("/{city}/sunrise", name="sunrise");
+     * 
+     * Param string
      * 
      * Method return a string of date in this format (D, d.m.y h.m.s O)
      * 
@@ -148,6 +167,8 @@ class WeatherController extends AbstractController
 
     /**
      * @Route("/{city}/sunset", name="sunset");
+     * 
+     * Param string
      * 
      * Method return a string of date in this format (D, d.m.y h.m.s O)
      * 
